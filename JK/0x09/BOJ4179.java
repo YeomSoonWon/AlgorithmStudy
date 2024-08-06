@@ -5,8 +5,8 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class BOJ4179 {
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
 
         //불이 이동하는 경로와 지훈이가 이동하는 경로를 나눠서 설정
         Queue<int[]> que1 = new LinkedList<>();
@@ -89,6 +89,6 @@ public class BOJ4179 {
         }
         //앞에서 지훈이가 탈출하지 못했다면 IMPOSSIBLE 출력
         System.out.println("IMPOSSIBLE");
-        sc.close();
+
     }
 }

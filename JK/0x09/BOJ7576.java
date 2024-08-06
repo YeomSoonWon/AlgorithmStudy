@@ -3,6 +3,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class BOJ7576 {
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int [][] board;
         int [][] day;
@@ -11,7 +12,6 @@ public class BOJ7576 {
 
         Queue<int[]> que = new LinkedList<>();
 
-        Scanner sc = new Scanner(System.in);
 
         int M = sc.nextInt();
         int N = sc.nextInt();
@@ -68,6 +68,5 @@ public class BOJ7576 {
             }
         }  
         System.out.println(max);
-        sc.close();
     }
 }
